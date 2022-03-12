@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio5</title>
+</head>
+<body>
+    <script>
+        class Persona {
+            constructor (nombre, apellido, edad) {
+                this.nombre = nombre;
+                this.apellido = apellido;
+                this.edad = edad;
+            }
+             getDetalles(){
+                 console.log ( "el nombre es " + this.nombre + " el apellido es" + this.apellido + " y la edad es" + this.edad);
+             }
+        
+        }
+         class Jugador extends Persona {
+             constructor (nombre,apellido,edad,posicion) {
+                 this.posicion = posicion;
+                 super (nombre,apellido, edad);
+             }
+             
+         getDetalles() {
+             super.getDetalles();
+             console.log ("la posicion es" + this.posicion);
+
+             }
+                
+             
+
+         }
+
+        
+         class Entrenador extends Persona {
+             constructor (nombre, apellido, edad,idFederacion, experiencia = "cinco años") {
+                for (i=0 ; i< 5; i++){
+                    if (idfederacion == i);
+                    return (math.floor(Math.random(5)* 10));
+                }
+                super (nombre,apellido,edad);
+                this.idFederacion =idFederacion;
+                this.experiencia = experiencia;
+             }
+             
+             
+         }
+            
+         class Equipo{
+             constructor(Entrenador,[jugadores = "jugador1, jugador2,jugador3"],Director){
+                 super.Entrenador = Entrenador;
+                 this.jugadores = jugadores;
+                this.Director = Director;
+             }
+
+         }
+        getDetalles(); {
+           console.log (Entrenador, jugadores);{
+
+            }
+        }
+         var arrjugadores = [];
+    arrjugadores.push(new Jugador("carlos","gonzalez",20, "delantero"));
+    arrjugadores.push(new Jugador("francisco","avila",25, "defensa"));
+    arrjugadores.push(new Jugador("jose", "hernandez",26, "portero"));
+
+    var objEntrenador = new Entrenador ('David','Martinez', 45, 0, 5);
+   
+    var objEquipo = new Equipo(objEntrenador,(Math.random()*10),arrEstudiantes);
+    console.log(objEquipo.Entrenador());
+
+    console.log(objEquipo.jugadores());
+// no logre solucionar el error//
+
+
+    </script>
+</body>
+</html>
